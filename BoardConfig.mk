@@ -47,6 +47,9 @@ BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
 TARGET_KERNEL_CONFIG := addison_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
+# kernel toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.x/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 # BOARD_USES_QCOM_HARDWARE := true
 
