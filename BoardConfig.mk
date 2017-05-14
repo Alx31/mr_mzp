@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/addison
+LOCAL_PATH := device/motorola/addison
 
-TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
+# TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
 
 TARGET_ARCH := arm
 TARGET_CPU_ABI  := armeabi-v7a
@@ -43,7 +43,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 TARGET_CUSTOM_DTBTOOL := dtbTool_moto
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
 TARGET_KERNEL_CONFIG := addison_defconfig
